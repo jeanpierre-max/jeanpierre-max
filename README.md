@@ -181,7 +181,7 @@ const jeanpierre = {
 <br/>
 
 <div align="center">
-  <img src="https://jeanpierre-streak-stats.vercel.app?user=jeanpierre-max&theme=midnight-purple&hide_border=true&background=0D1117&stroke=A855F7&ring=A855F7&fire=FF6B6B&currStreakLabel=A855F7&sideLabels=ffffff&dates=888888" />
+  <img src="https://jeanpierre-streak-stats.vercel.app?user=jeanpierre-max&theme=midnight-purple&hide_border=true&background=0D1117&stroke=A855F7&ring=A855F7&fire=FF6B6B&currStreakLabel=A855F7&sideLabels=ffffff&dates=888888&locale=es" />
 </div>
 
 <br/>
