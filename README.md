@@ -173,9 +173,9 @@ const jeanpierre = {
 <h2 align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="32" align="center" /> Estadísticas de GitHub</h2>
 
 <div align="center">
-  <img height="160" src="https://jeanpierre-stats.vercel.app/api?username=jeanpierre-max&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=A855F7&text_color=ffffff&include_all_commits=true&count_private=true&v=2" />
+  <img height="160" src="https://jeanpierre-stats.vercel.app/api?username=jeanpierre-max&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=A855F7&text_color=ffffff&include_all_commits=true&count_private=true&locale=es&v=2" />
   &nbsp;
-  <img height="160" src="https://jeanpierre-stats.vercel.app/api/top-langs/?username=jeanpierre-max&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=ffffff&langs_count=8&v=2" />
+  <img height="160" src="https://jeanpierre-stats.vercel.app/api/top-langs/?username=jeanpierre-max&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=ffffff&langs_count=8&locale=es&v=2" />
 </div>
 
 <br/>
