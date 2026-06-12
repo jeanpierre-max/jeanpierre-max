@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Divisor de circuito neon">
+  <title>Divisor — circuito neon</title>
+  <defs>
+    <!-- Linea con fundido en los extremos -->
+    <linearGradient id="neo-div-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0"/>
+      <stop offset="0.12" stop-color="#A855F7" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="#A855F7" stop-opacity="0.95"/>
+      <stop offset="0.88" stop-color="#A855F7" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow suave para la traza -->
+    <filter id="neo-div-soft" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2"/>
+    </filter>
+
+    <!-- Glow para el pulso de datos -->
+    <filter id="neo-div-glow" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.4" result="neo-dvb"/>
+      <feMerge>
+        <feMergeNode in="neo-dvb"/>
+        <feMergeNode in="neo-dvb"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Ruta del circuito (para la traza y el animateMotion) -->
+    <path id="neo-div-path" d="M0 12 H176 L188 5 H420 L432 12 H700 L712 19 H940 L952 12 H1200"/>
+  </defs>
+
+  <!-- Traza: halo difuso + linea nitida -->
+  <use href="#neo-div-path" fill="none" stroke="#A855F7" stroke-opacity="0.35" stroke-width="3.5" filter="url(#neo-div-soft)"/>
+  <use href="#neo-div-path" fill="none" stroke="url(#neo-div-line)" stroke-width="1.3" stroke-linejoin="round"/>
+
+  <!-- Nodos del circuito -->
+  <g fill="#A855F7" fill-opacity="0.85">
+    <circle cx="188" cy="5" r="2.4"/>
+    <circle cx="420" cy="5" r="2.4"/>
+    <circle cx="712" cy="19" r="2.4"/>
+    <circle cx="940" cy="19" r="2.4"/>
+  </g>
+  <circle cx="600" cy="12" r="3" fill="none" stroke="#38BDF8" stroke-opacity="0.7" stroke-width="1.2">
+    <animate attributeName="stroke-opacity" values="0.35;0.85;0.35" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pulso de datos principal (cian con estela violeta) -->
+  <g filter="url(#neo-div-glow)">
+    <circle r="5" fill="#A855F7" fill-opacity="0.30"/>
+    <circle r="2.4" fill="#38BDF8"/>
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="none">
+      <mpath href="#neo-div-path"/>
+    </animateMotion>
+  </g>
+
+  <!-- Pulso secundario violeta, desfasado -->
+  <circle r="2" fill="#A855F7" filter="url(#neo-div-glow)">
+    <animateMotion dur="6s" begin="3s" repeatCount="indefinite" rotate="none">
+      <mpath href="#neo-div-path"/>
+    </animateMotion>
+  </circle>
+</svg>

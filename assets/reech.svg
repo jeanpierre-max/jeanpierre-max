@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="240" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>Reech AI &#183; AI-powered platforms for real businesses</title>
+
+  <defs>
+    <clipPath id="rc-clip">
+      <rect x="0" y="0" width="1200" height="240" rx="18"/>
+    </clipPath>
+
+    <pattern id="rc-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="rc-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="1" fill="#F8FAFC"/>
+    </pattern>
+
+    <linearGradient id="rc-titleGrad" gradientUnits="userSpaceOnUse" x1="500" y1="92" x2="705" y2="114">
+      <stop offset="0"   stop-color="#04996B"/>
+      <stop offset="0.5" stop-color="#10B981"/>
+      <stop offset="0.8" stop-color="#34D399"/>
+      <stop offset="1"   stop-color="#6EE7B7"/>
+    </linearGradient>
+
+    <linearGradient id="rc-shimmer" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="160" y2="0" spreadMethod="pad">
+      <stop offset="0"   stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="1"   stop-color="#FFFFFF" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="320 0; 900 0" dur="5.5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="rc-glowC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0"   stop-color="#10B981" stop-opacity="0.16"/>
+      <stop offset="0.7" stop-color="#04996B" stop-opacity="0.05"/>
+      <stop offset="1"   stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="rc-glowSide" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="rc-textglow" x="-30%" y="-60%" width="160%" height="220%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#10B981" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="rc-lineglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#A855F7" flood-opacity="0.65"/>
+    </filter>
+
+    <filter id="rc-greenglow" x="-40%" y="-80%" width="180%" height="260%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#22C55E" flood-opacity="0.55"/>
+    </filter>
+
+    <path id="rc-orbit" d="M 94 120 a 66 20 0 1 0 132 0 a 66 20 0 1 0 -132 0"/>
+    <path id="rc-traceA" d="M 948 78 L 1032 78 L 1058 104 L 1136 104"/>
+    <path id="rc-traceBrev" d="M 1136 138 L 1044 138 L 1016 164 L 948 164"/>
+  </defs>
+
+  <g clip-path="url(#rc-clip)">
+    <!-- Fondo -->
+    <rect x="0" y="0" width="1200" height="240" rx="18" fill="#0D1117"/>
+    <rect x="0" y="0" width="1200" height="240" fill="url(#rc-grid)" opacity="0.5"/>
+    <rect x="0" y="0" width="1200" height="240" fill="url(#rc-scan)" opacity="0.025"/>
+
+    <!-- Glows ambientales -->
+    <ellipse cx="600" cy="120" rx="390" ry="135" fill="url(#rc-glowC)"/>
+    <circle cx="160" cy="120" r="130" fill="url(#rc-glowSide)"/>
+    <circle cx="1045" cy="125" r="130" fill="url(#rc-glowSide)"/>
+
+    <!-- COSTADO IZQUIERDO: mini esfera wireframe -->
+    <g transform="rotate(-14 160 120)" filter="url(#rc-lineglow)" fill="none">
+      <circle cx="160" cy="120" r="45" stroke="#C4B5FD" stroke-width="1.4" opacity="0.65"/>
+      <!-- latitudes -->
+      <ellipse cx="160" cy="120" rx="45" ry="9"   stroke="#A855F7" stroke-width="1.1" opacity="0.5"/>
+      <ellipse cx="160" cy="98"  rx="38" ry="7.5" stroke="#A855F7" stroke-width="1"   opacity="0.4"/>
+      <ellipse cx="160" cy="142" rx="38" ry="7.5" stroke="#A855F7" stroke-width="1"   opacity="0.4"/>
+      <!-- meridianos rotando -->
+      <ellipse cx="160" cy="120" rx="45" ry="45" stroke="#D946EF" stroke-width="1.2">
+        <animate attributeName="rx" values="45;2;45" dur="10s" repeatCount="indefinite"
+                 calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <animate attributeName="opacity" values="0.75;0.25;0.75" dur="10s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="160" cy="120" rx="45" ry="45" stroke="#A855F7" stroke-width="1.2">
+        <animate attributeName="rx" values="45;2;45" dur="10s" begin="-5s" repeatCount="indefinite"
+                 calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <animate attributeName="opacity" values="0.75;0.25;0.75" dur="10s" begin="-5s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- vertices latientes -->
+      <g stroke="none">
+        <circle cx="160" cy="75" r="1.9" fill="#E879F9">
+          <animate attributeName="r" values="1.6;2.7;1.6" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="205" cy="120" r="1.9" fill="#C4B5FD">
+          <animate attributeName="r" values="1.6;2.7;1.6" dur="3s" begin="-1s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="-1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="115" cy="120" r="1.9" fill="#A855F7">
+          <animate attributeName="r" values="1.6;2.7;1.6" dur="3s" begin="-2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" begin="-2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="160" cy="165" r="1.7" fill="#38BDF8">
+          <animate attributeName="r" values="1.4;2.4;1.4" dur="3s" begin="-1.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" begin="-1.5s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+
+    <!-- Anillo orbital punteado con particula -->
+    <g transform="rotate(-18 160 120)">
+      <ellipse cx="160" cy="120" rx="66" ry="20" fill="none" stroke="#A855F7"
+               stroke-width="1" stroke-dasharray="3 7" opacity="0.3"/>
+      <circle r="2.4" fill="#E879F9" filter="url(#rc-lineglow)">
+        <animateMotion dur="9s" repeatCount="indefinite" rotate="0">
+          <mpath xlink:href="#rc-orbit"/>
+        </animateMotion>
+      </circle>
+    </g>
+
+    <!-- COSTADO DERECHO: circuitos con nodos -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 948 78 L 1032 78 L 1058 104 L 1136 104"  stroke="#A855F7" stroke-width="1.2" opacity="0.5"/>
+      <path d="M 948 164 L 1016 164 L 1044 138 L 1136 138" stroke="#38BDF8" stroke-width="1.1" opacity="0.32"/>
+      <path d="M 972 196 L 1052 196 L 1074 176 L 1112 176" stroke="#A855F7" stroke-width="1"   opacity="0.35"/>
+    </g>
+    <g stroke="none">
+      <circle cx="948"  cy="78"  r="2.4" fill="#A855F7" opacity="0.8"/>
+      <circle cx="1136" cy="104" r="2.6" fill="#E879F9">
+        <animate attributeName="r" values="2.1;3.2;2.1" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="948"  cy="164" r="2.2" fill="#38BDF8" opacity="0.7"/>
+      <circle cx="1136" cy="138" r="2.2" fill="#38BDF8">
+        <animate attributeName="r" values="1.8;2.8;1.8" dur="3s" begin="-1.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.95;0.5" dur="3s" begin="-1.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="972"  cy="196" r="2"   fill="#C4B5FD" opacity="0.6"/>
+      <circle cx="1112" cy="176" r="2"   fill="#A855F7" opacity="0.7"/>
+    </g>
+    <!-- pulsos de datos -->
+    <circle r="2.6" fill="#E879F9" filter="url(#rc-lineglow)">
+      <animateMotion dur="4.2s" repeatCount="indefinite" rotate="0">
+        <mpath xlink:href="#rc-traceA"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.2" fill="#38BDF8" filter="url(#rc-lineglow)">
+      <animateMotion dur="5.4s" begin="-2s" repeatCount="indefinite" rotate="0">
+        <mpath xlink:href="#rc-traceBrev"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.12;0.88;1" dur="5.4s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- estrellas parpadeantes -->
+    <g fill="#C4B5FD">
+      <circle cx="1006" cy="56" r="1.3">
+        <animate attributeName="opacity" values="0.25;0.85;0.25" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1124" cy="66" r="1.1" fill="#38BDF8">
+        <animate attributeName="opacity" values="0.75;0.2;0.75" dur="4.1s" begin="-1.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1078" cy="214" r="1.2">
+        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.9s" begin="-0.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- CENTRO -->
+    <text x="600" y="58" text-anchor="middle" fill="#64748B"
+          font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="13">// founder &#183; building at</text>
+
+    <!-- Titulo con gradiente + shimmer -->
+    <text x="600" y="110" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+          font-size="40" font-weight="800" letter-spacing="0.5"
+          fill="url(#rc-titleGrad)" filter="url(#rc-textglow)">Reech AI</text>
+    <text x="600" y="110" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+          font-size="40" font-weight="800" letter-spacing="0.5"
+          fill="url(#rc-shimmer)">Reech AI</text>
+
+    <!-- Descripcion -->
+    <text x="600" y="142" text-anchor="middle" fill="#94A3B8"
+          font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+          font-size="15">AI-powered platforms for real businesses &#8212; intelligent agents, RAG pipelines,</text>
+    <text x="600" y="164" text-anchor="middle" fill="#94A3B8"
+          font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+          font-size="15">and realtime products built on TypeScript, Next.js, Supabase and Google Cloud.</text>
+
+    <!-- Pill: Visit reechai.com -->
+    <g>
+      <rect x="495" y="190" width="210" height="26" rx="13" fill="none"
+            stroke="#22C55E" stroke-width="1.6" filter="url(#rc-greenglow)">
+        <animate attributeName="opacity" values="0.3;0.75;0.3" dur="3.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="495" y="190" width="210" height="26" rx="13"
+            fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.65" stroke-width="1.2"/>
+      <text x="592" y="207.5" text-anchor="middle"
+            font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="13">
+        <tspan fill="#E2E8F0">Visit</tspan><tspan fill="#22C55E" fill-opacity="0.75">&#160;&#183;&#160;</tspan><tspan fill="#22C55E">reechai.com</tspan>
+      </text>
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+                          values="0 0; 3 0; 0 0" dur="2.4s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <text x="678" y="207.5" fill="#22C55E"
+              font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="13">&#8594;</text>
+      </g>
+    </g>
+
+    <!-- Marco HUD: corchetes de esquina -->
+    <g fill="none" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.35;0.62;0.35" dur="4.5s" repeatCount="indefinite"/>
+      <path d="M26 54 L26 34 Q26 26 34 26 L54 26"/>
+      <path d="M1146 26 L1166 26 Q1174 26 1174 34 L1174 54"/>
+      <path d="M1174 186 L1174 206 Q1174 214 1166 214 L1146 214"/>
+      <path d="M54 214 L34 214 Q26 214 26 206 L26 186"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Footer de cierre - fin de la sesion">
+  <title>Footer &#8212; circuito neon de cierre</title>
+  <defs>
+    <!-- Fundido del fondo: transparente arriba, negro terminal abajo -->
+    <linearGradient id="neo-ft-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#0D1117" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#0D1117" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Linea de circuito con fundido en los extremos -->
+    <linearGradient id="neo-ft-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0"/>
+      <stop offset="0.12" stop-color="#A855F7" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="#A855F7" stop-opacity="0.95"/>
+      <stop offset="0.88" stop-color="#A855F7" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Scanlines CRT muy tenues -->
+    <pattern id="neo-ft-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="1" fill="#F8FAFC" fill-opacity="0.018"/>
+    </pattern>
+
+    <!-- Halo ambiental tras el prompt de cierre -->
+    <radialGradient id="neo-ft-aura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#A855F7" stop-opacity="0.12"/>
+      <stop offset="0.6" stop-color="#A855F7" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow suave para la traza del circuito -->
+    <filter id="neo-ft-soft" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2"/>
+    </filter>
+
+    <!-- Glow neon violeta para el texto -->
+    <filter id="neo-ft-glow" x="-40%" y="-100%" width="180%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="neo-ft-b"/>
+      <feFlood flood-color="#A855F7" flood-opacity="0.9"/>
+      <feComposite in2="neo-ft-b" operator="in" result="neo-ft-halo"/>
+      <feMerge>
+        <feMergeNode in="neo-ft-halo"/>
+        <feMergeNode in="neo-ft-halo"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glow para pulsos de datos y cursor -->
+    <filter id="neo-ft-dot-glow" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.4" result="neo-ft-db"/>
+      <feMerge>
+        <feMergeNode in="neo-ft-db"/>
+        <feMergeNode in="neo-ft-db"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Ruta del circuito de cierre (traza + animateMotion) -->
+    <path id="neo-ft-path" d="M0 30 H172 L184 21 H430 L442 30 H716 L728 39 H952 L964 30 H1200"/>
+  </defs>
+
+  <!-- Fondo fundido -->
+  <rect x="0" y="0" width="1200" height="120" fill="url(#neo-ft-fade)"/>
+
+  <!-- Aura violeta pulsante tras el prompt -->
+  <ellipse cx="600" cy="78" rx="320" ry="52" fill="url(#neo-ft-aura)">
+    <animate attributeName="opacity" values="0.55;1;0.55" keyTimes="0;0.5;1" dur="7s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Circuito de cierre: halo difuso con respiracion + linea nitida -->
+  <use href="#neo-ft-path" fill="none" stroke="#A855F7" stroke-width="3.5" filter="url(#neo-ft-soft)">
+    <animate attributeName="stroke-opacity" values="0.20;0.42;0.20" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+  </use>
+  <use href="#neo-ft-path" fill="none" stroke="url(#neo-ft-line)" stroke-width="1.3" stroke-linejoin="round"/>
+
+  <!-- Nodos del circuito -->
+  <g fill="#A855F7" fill-opacity="0.85">
+    <circle cx="184" cy="21" r="2.4"/>
+    <circle cx="430" cy="21" r="2.4"/>
+    <circle cx="728" cy="39" r="2.4"/>
+    <circle cx="952" cy="39" r="2.4"/>
+  </g>
+  <circle cx="600" cy="30" r="3" fill="none" stroke="#38BDF8" stroke-opacity="0.7" stroke-width="1.2">
+    <animate attributeName="stroke-opacity" values="0.35;0.85;0.35" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pulso de datos principal (cian con estela violeta) -->
+  <g filter="url(#neo-ft-dot-glow)">
+    <circle r="5" fill="#A855F7" fill-opacity="0.30"/>
+    <circle r="2.4" fill="#38BDF8"/>
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="none">
+      <mpath href="#neo-ft-path"/>
+    </animateMotion>
+  </g>
+
+  <!-- Pulso secundario violeta, desfasado -->
+  <circle r="2" fill="#A855F7" filter="url(#neo-ft-dot-glow)">
+    <animateMotion dur="6s" begin="3s" repeatCount="indefinite" rotate="none">
+      <mpath href="#neo-ft-path"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Prompt de cierre: ~$ exit + cursor de bloque -->
+  <text x="552" y="79" font-family="'Cascadia Code', 'Consolas', 'Courier New', monospace" font-size="16" letter-spacing="2" fill="#22C55E" textLength="24" lengthAdjust="spacing">~$</text>
+  <text x="586" y="79" font-family="'Cascadia Code', 'Consolas', 'Courier New', monospace" font-size="16" letter-spacing="2" fill="#A855F7" filter="url(#neo-ft-glow)" textLength="46" lengthAdjust="spacing">exit</text>
+  <rect x="642" y="65" width="10" height="18" fill="#A855F7" fill-opacity="0.85" filter="url(#neo-ft-dot-glow)">
+    <animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;0.5" dur="1.06s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Microcopy sutil -->
+  <text x="600" y="105" text-anchor="middle" font-family="'Cascadia Code', 'Consolas', 'Courier New', monospace" font-size="12" letter-spacing="1" fill="#94A3B8" fill-opacity="0.45">// gracias por visitar &#8212; hecho con cafe + violeta</text>
+
+  <!-- Scanlines tenues sobre la zona oscura -->
+  <rect x="0" y="46" width="1200" height="74" fill="url(#neo-ft-scan)"/>
+</svg>
