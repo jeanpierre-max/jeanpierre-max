@@ -165,10 +165,6 @@
       </circle>
     </g>
 
-    <!-- CENTRO -->
-    <text x="600" y="58" text-anchor="middle" fill="#64748B"
-          font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="13">// founder &#183; building at</text>
-
     <!-- Titulo con gradiente + shimmer -->
     <text x="600" y="110" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
           font-size="40" font-weight="800" letter-spacing="0.5"

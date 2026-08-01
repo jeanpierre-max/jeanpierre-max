@@ -25,8 +25,6 @@
     <text x="40" y="34" font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="15">
       <tspan fill="#A855F7">~/stack</tspan><tspan fill="#22C55E"> $ </tspan><tspan fill="#38BDF8">ls</tspan><tspan fill="#94A3B8"> --all</tspan>
     </text>
-    <text x="1160" y="34" text-anchor="end" fill="#64748B"
-          font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="15">// scroll infinito</text>
     <g clip-path="url(#st-rows)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0; -1120 0" dur="34s" repeatCount="indefinite" calcMode="linear"/>

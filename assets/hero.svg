@@ -173,10 +173,6 @@
       <animate attributeName="opacity" values="1;0" dur="1.1s" calcMode="discrete" repeatCount="indefinite"/>
     </rect>
 
-    <!-- Comentario arriba-derecha -->
-    <text x="1136" y="52" text-anchor="end" fill="#64748B"
-          font-family="'Cascadia Code','Consolas','Courier New',monospace" font-size="15">// perfil v2.0</text>
-
     <!-- NOMBRE GIGANTE -->
     <text x="64" y="150" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
           font-size="62" font-weight="800" letter-spacing="0.5"

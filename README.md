@@ -16,7 +16,7 @@
 <img src="assets/divider.svg" width="100%" alt="" />
 
 <div align="center">
-  <img src="assets/about.svg" width="100%" alt="Terminal Sobre mí — whoami: Jean Pierre FM, Full-Stack Dev Jr @ Reech AI · focus: Apps con IA · Edge Backends · Full-Stack TS · skills: NestJS, Hono, LangGraph, React Native, Supabase, GCP · Chimbote, Perú · misión: convertir problemas complejos en productos con IA" />
+  <img src="assets/about.svg" width="100%" alt="Sobre mí — visual map en partículas + system info: Jean Pierre FM, Full-Stack Dev Jr @ Reech AI · Chimbote, Perú · NestJS, React Native, TypeScript, Supabase · misión: convertir problemas complejos en productos con IA" />
 </div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
